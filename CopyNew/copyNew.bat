@@ -36,7 +36,7 @@ ECHO %ORIGINAL%
 FOR /F "DELIMS=." %%A IN ("%ORIGINAL%") DO SET PART=%%A
 
 @REM rename the file & exit
-COPY %FIRST% %PART%---%DATETIMEF%.%EXT%
+COPY %ORIGINAL% %PART%---%DATETIMEF%.%EXT%
 GOTO END
 
 @REM usage display
